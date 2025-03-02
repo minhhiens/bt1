@@ -1,73 +1,49 @@
-/* Thiết lập chung cho toàn trang */
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #111; /* Nền tối */
-  font-family: sans-serif;
-  color: #eee;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Footer */
-footer {
-  display: flex;                /* Sử dụng flexbox để chia bố cục theo hàng ngang */
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  background-color: #111;        /* Nền footer trùng với nền trang */
+footer{
+    width: 800px;
+    display: flex;
+    background-color: #111;
+    padding: 20px;
+}
+.about{
+    width: 60%;
+    margin-right: 20px;
+}
+.links{
+    width: 40%;
+}
+h2{
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+}
+p{
+    color: #666;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+ul{
+    list-style: none;
+    
+}
+ul li {
+    margin-bottom: 15px;
 }
 
-/* Khối About bên trái */
-footer .about {
-  width: 50%;
-  padding-right: 20px;
-  border-right: 1px solid #444; /* Đường kẻ phân chia */
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+a:hover{
+    color: #4D96FF;
+    transition: all 1s;
 }
 
-footer .about h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #eee;
-}
-
-footer .about p {
-  line-height: 1.6;
-  color: #ccc;
-}
-
-/* Khối Quick Links bên phải */
-footer .links {
-  width: 50%;
-  padding-left: 20px;
-}
-
-footer .links h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: #eee;
-}
-
-/* Bố cục cho danh sách link */
-footer .links .list {
-  display: flex;
-  gap: 40px;  /* Khoảng cách giữa 2 cột danh sách */
-}
-
-footer .links .list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer .links .list ul li {
-  margin-bottom: 5px;
-}
-
-footer .links .list ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-footer .links .list ul li a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
